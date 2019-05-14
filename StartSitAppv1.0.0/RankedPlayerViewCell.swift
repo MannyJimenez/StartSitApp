@@ -17,6 +17,8 @@ class RankedPlayerViewCell: UITableViewCell {
     @IBOutlet weak var teamImageView: UIImageView!
     
     
+    //nameLabel.font = UIFont.init(name: "MavenPro-Bold", size: 30)
+    
 
     /*override func awakeFromNib() {
         super.awakeFromNib()

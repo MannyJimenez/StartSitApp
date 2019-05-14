@@ -92,6 +92,15 @@ class LogoutViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return favoritedPlayers.count
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let playerToday = favoritedPlayers[indexPath.row]
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            favoritedPlayers.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            databaseRef!.child(playerToday.Name).removeValue();
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoritePlayer", for: indexPath) as? FavoritePlayerCell
         

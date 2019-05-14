@@ -66,6 +66,7 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         let playerToday = RankedPlayer?[indexPath.row]
         
         cell?.nameLabel?.text = playerToday?.Name
+        cell?.nameLabel?.font = UIFont(name: "Future-MediumItalic", size: 30)
         cell?.teamLabel?.text = playerToday?.Team
         cell?.posLabel?.text = playerToday?.Position
         let points:String = String(format:"%f", playerToday?.LastSeasonFantasyPoints ?? 0)

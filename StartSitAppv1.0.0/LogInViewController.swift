@@ -74,9 +74,6 @@ class LogInViewController: UIViewController {
         self.present(loggedInVC, animated: true, completion: nil)
     }
     
-    @IBAction func unwindFromSettingsLogin(segue:UIStoryboardSegue) {
-        
-    }
     
     
 }

@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidLoad()
         teamPickerView.delegate = self
         teamPickerView.dataSource = self
+        
         if Auth.auth().currentUser == nil
         {
             logoutButton.isEnabled = false
@@ -53,6 +54,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }*/
         return teamArray.count
     }
+    
+    /*func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let pickerLabel: UILabel? = (view as? UILabel)
+        pickerLabel!.font = UIFont(name: "Futura-MediumItalic", size: 17)
+        
+        return pickerLabel!
+    }*/
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         /*if (component == 0){

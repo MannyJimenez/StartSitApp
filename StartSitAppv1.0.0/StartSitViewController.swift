@@ -276,6 +276,14 @@ class StartSitViewController: UIViewController, UITableViewDelegate, UITableView
             //destVC?.index = selectedIndexPath?.row
             
         }
+        if segue.identifier == "settings"
+        {
+            let destVC = segue.destination as? SettingsViewController
+        }
+    }
+    
+    @IBAction func unwindFromSettingsLogin(segue:UIStoryboardSegue) {
+        
     }
     
 

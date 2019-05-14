@@ -34,6 +34,8 @@ class PlayerDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //clickedPlayerNameLabel.font = UIFont.init(name: "Future-MediumItalic", size: 30)
+        
         if Auth.auth().currentUser == nil
         {
             favoritePlayerSwitch.isEnabled = false
