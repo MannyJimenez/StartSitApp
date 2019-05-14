@@ -18,6 +18,7 @@
 		3F45AC98222D04AD00D54C0D /* RankedPlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45AC97222D04AD00D54C0D /* RankedPlayerViewCell.swift */; };
 		3F45AC9A222D09F900D54C0D /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45AC99222D09F900D54C0D /* PlayerDetailsViewController.swift */; };
 		3F7A06AB228A6A7D00EA3ABD /* maven-pro in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A06AA228A6A7D00EA3ABD /* maven-pro */; };
+		3F7A06AD228A8EFF00EA3ABD /* maven-pro in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A06AC228A8EFF00EA3ABD /* maven-pro */; };
 		3F9463CF222CC79300E9D06E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9463CE222CC79300E9D06E /* AppDelegate.swift */; };
 		3F9463D1222CC79300E9D06E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9463D0222CC79300E9D06E /* LogInViewController.swift */; };
 		3F9463D4222CC79300E9D06E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9463D2222CC79300E9D06E /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		3F45AC97222D04AD00D54C0D /* RankedPlayerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedPlayerViewCell.swift; sourceTree = "<group>"; };
 		3F45AC99222D09F900D54C0D /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		3F7A06AA228A6A7D00EA3ABD /* maven-pro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "maven-pro"; path = "../../../Downloads/maven-pro"; sourceTree = "<group>"; };
+		3F7A06AC228A8EFF00EA3ABD /* maven-pro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "maven-pro"; path = "../../../../Downloads/maven-pro"; sourceTree = "<group>"; };
 		3F9463CB222CC79300E9D06E /* StartSitAppv1.0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartSitAppv1.0.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9463CE222CC79300E9D06E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9463D0222CC79300E9D06E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				3F7A06AA228A6A7D00EA3ABD /* maven-pro */,
+				3F7A06AC228A8EFF00EA3ABD /* maven-pro */,
 				3FE2AF16222E157900918708 /* GoogleService-Info.plist */,
 				3FE2AF14222E152800918708 /* TemporaryLogo.png */,
 				3F9463CE222CC79300E9D06E /* AppDelegate.swift */,
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7A06AB228A6A7D00EA3ABD /* maven-pro in Resources */,
+				3F7A06AD228A8EFF00EA3ABD /* maven-pro in Resources */,
 				3FE2AF15222E152800918708 /* TemporaryLogo.png in Resources */,
 				3F9463D9222CC79400E9D06E /* LaunchScreen.storyboard in Resources */,
 				3FE2AF17222E157900918708 /* GoogleService-Info.plist in Resources */,
