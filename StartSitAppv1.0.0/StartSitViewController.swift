@@ -230,6 +230,8 @@ class StartSitViewController: UIViewController, UITableViewDelegate, UITableView
                 cell?.nameLabel?.text = playerToday?.Name
                 cell?.teamLabel?.text = playerToday?.Team
                 cell?.posLabel?.text = playerToday?.Position
+                // check here for the position and change it accordingly
+                //cell?.posLabel?.textColor = UIColor.red
             }
             else
             {
