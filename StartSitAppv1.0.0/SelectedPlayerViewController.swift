@@ -26,9 +26,10 @@ class SelectedPlayerViewController: UIViewController {
     
     var winnerID : Int = 0
     
-    var firstProjPoints : Double = 0
-    var secondProjPoints : Double = 0
-    var winnerProjPoints : Double = 0
+    var firstProjPoints : String?
+    var secondProjPoints : String?
+    var winnerProjPoints : String?
+    //var winnerProjPoints : Double = 0
     
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -41,8 +42,10 @@ class SelectedPlayerViewController: UIViewController {
         let firstplayerID:String = String(format:"%d", firstID!)
         let secondplayerID:String = String(format:"%d", secondID!)
         
-        let firstapiURL = "http://18.191.177.118/player/" + firstplayerID
-        let secondapiURL = "http://18.191.177.118/player/" + secondplayerID
+        // "http://18.191.177.118/player/"
+        
+        let firstapiURL = "http://18.191.177.118:8000/player/" + firstplayerID
+        let secondapiURL = "http://18.191.177.118:8000/player/" + secondplayerID
         
         print(firstapiURL)
         print(secondapiURL)
@@ -83,7 +86,7 @@ class SelectedPlayerViewController: UIViewController {
         //task.finalize()
         task.resume()
         semaphore.wait()
-        print(self.firstProjPoints)
+        print(self.firstProjPoints!)
         print("HAHAHA")
         let tasktwo: URLSessionDataTask = session.dataTask(with: requesttwo)
         { (receivedData, response, error) -> Void in
@@ -111,12 +114,12 @@ class SelectedPlayerViewController: UIViewController {
        tasktwo.resume()
        semaphore1.wait()
        //print("I WORKED")
-       print(firstProjPoints)
+       print(firstProjPoints!)
        print("First Player")
-       print(secondProjPoints)
+       print(secondProjPoints!)
        print("Second Player")
        
-       if (firstProjPoints > secondProjPoints)
+       if (Double(firstProjPoints!)! > Double(secondProjPoints!)!)
        {
             winnerProjPoints = firstProjPoints
             winnerID = firstID!
@@ -130,7 +133,7 @@ class SelectedPlayerViewController: UIViewController {
             nameLabel.text = secondName!
        }
         
-        projPointsLabel.text = String(winnerProjPoints)
+        projPointsLabel.text = winnerProjPoints
         
         let playerID:String = String(format:"%d", self.winnerID)
         var urlImage = "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/" + playerID + ".png"

@@ -10,7 +10,7 @@ import Foundation
 struct NeuralNetModel : Codable
 {
     var PlayerPointsName : String?
-    var PlayerPointsProjected : Double?
+    var PlayerPointsProjected : String?
     var PlayerPos : String?
     var PlayerTeam : String?
 }
